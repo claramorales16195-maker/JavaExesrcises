@@ -1,0 +1,20 @@
+package Exercises;
+
+public class Sobrecarga {
+    public String nombre;
+    public String materia;
+    public int calificacion;
+
+    public Sobrecarga(String nombre, String materia, int calificacion) {
+        this.nombre = nombre;
+        this.materia = materia;
+        this.calificacion = calificacion;
+    }
+
+    public String reprobar() {
+        if (this.calificacion < 6) {
+            return ":(";
+        }
+        return ":)";
+    }
+}
